@@ -309,7 +309,7 @@ header nav .link img {
 /* DEALS */
 
 .deals {
-    height: 500px;
+    height: 550px;
     display: flex;
     color: white;
     font-size: .8rem;
@@ -380,6 +380,30 @@ header nav .link img {
 
 .deals .details .events .location p {
     margin: 10px 0 50px 0;
+}
+
+/* Booking */
+
+.booking {
+    height: 150px;
+    background-image: url(img/h3-background-img-3.jpg);
+    background-size: cover;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.booking input {
+    padding: 10px;
+    margin:0 15px 0 15px;
+    border: 1px solid black;
+}
+
+.booking button {
+    padding: 15px 35px;
+    color: white;
+    background-color: #D2401E;
+    border: none;
+    font-size: .6rem;
 }
 
 /* HELPER */
