@@ -75,7 +75,7 @@ header nav .link img {
 }
 
 .header-bot ul li img {
-    height: 200px;
+    height: 250px;
     width: 100%;
     padding: 5px 5px 5px 5px;
 }
@@ -161,27 +161,173 @@ header nav .link img {
 
 .goahead {
     height: 350px;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
-.goahead .first {
+.left {
+    width: 7%;
+    background-image: url(img/h3-background-img.jpg);
+}
+
+.center {
+    width: 86%;
+}
+
+.right {
+    width: 7%;
+    background-image: url(img/h3-background-img.jpg);
+}
+
+.goahead .center .first {
     height: 25%;
     background-image: url(img/h3-background-img.jpg);
     background-size: cover;
     background-position: bottom;
-
 }
-.goahead .second {
+
+.goahead .center .second {
     height: 50%;
     background-image: url(img/h3-background-img.jpg);
     background-size: cover;
-    background-position-y: 105vh;
+    background-position-y: 200vh;
 }
 
-.goahead .third {
+.goahead .center .third {
     height: 25%;
     background-image: url(img/h3-background-img.jpg);
     background-size: cover;
     background-position-y: 50vh;
+}
+
+.goahead .left .first,
+.goahead .left .third {
+    height: 25%;
+    background-image: url(img/h3-background-img.jpg);
+    background-position: bottom;
+}
+
+.goahead .right .first,
+.goahead .right .third {
+    height: 25%;
+    background-image: url(img/h3-background-img.jpg);
+    background-position-y: 50vh;
+}
+
+.goahead .left .second,
+.goahead .right .second {
+    height: 50%;
+    background-image: url(img/h3-background-img.jpg);
+    background-position: center;
+}
+
+
+/* Team */
+
+.team ul li {
+    width: 25%;
+    padding: 5px 0;
+}
+
+.team ul li img {
+    height: 335px;
+    width: 100%;
+}
+
+/* Clients */
+.clients {
+    background-color: #f7f7f2;
+}
+
+.clients ul {
+    width: 80%;
+    flex: 0 0 5;
+}
+
+.clients ul li {
+    margin: 40px 0px;
+    width: 15%;
+    height: 20%;
+}
+
+.clients ul li img {
+    width: 90%;
+    height: 90%;
+}
+
+
+/* Pizza Slider */
+
+.pizza-slider {
+    height: 550px;
+    flex-flow: column nowrap;
+    overflow-x: hidden;
+}
+
+.pizza-slider .header {
+    flex-flow: column nowrap;
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+.pizza-slider .header p {
+    text-align: center;
+    color: #B2B2B2;
+    font-size: .8rem;
+}
+
+.pizza-slider .header h5 {
+    color: #D2401E
+}
+
+.pizza-slider .header h2 {
+    margin: 15px 0;
+}
+
+.slider-bot ul li img{
+    width: 150px;
+    margin: 15px 50px;
+}
+
+.slider-bot ul li {
+    flex-flow: column nowrap;
+}
+
+.slider-bot .name {
+    color: #B68A2B;
+    font-size: .8rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.slider-bot .price {
+    color: #D23F1D;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+/* DEALS */
+
+.deals {
+    height: 500px;
+    display: flex;
+}
+
+.deals .details {
+    width: 50%;
+    height: 500px;
+    /* background-color: #1C1C1C; */
+}
+
+.deals img {
+    width: 50%;
+    height: 550px;
+}
+
+.deals .details .place {
+    display: flex;
+    align-items: flex-start;
+
 }
 
 /* HELPER */

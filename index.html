@@ -100,26 +100,74 @@
         </div>
 
         <div class="goahead">
-            <div class="first"></div>
-            <div class="second"></div>
-            <div class="third"></div>
+            <div class="left">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="third"></div>
+            </div>
+            <div class="center">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="third"></div>
+            </div>
+            <div class="right">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="third"></div>
+            </div>
+            
         </div>
 
         <div class="team">
             <ul>
-                <li>
-                    
+                <li v-for='worker, index in team'>
+                    <img :src="'img/' + worker.pic + '.jpg'" alt="Staff Images">
                 </li>
             </ul>
         </div>
-        <div class="clients">
 
+        <div class="clients flex-center">
+            <ul class='flex-center'>
+                <li class='flex-center' v-for='client in clients'>
+                    <img :src="'img/' + client + '.png'" alt="Logo clients">
+                </li>
+            </ul>
         </div>
-        <div class="pizza-slider">
 
+        <div class="pizza-slider flex-center">
+            <div class="header flex-center">
+                <h5>CHOOSE YOUR FLAVOR</h5>
+                <h2>THE BEST PIZZA MENU IN TOWN</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt et, nisi reprehenderit cumque maiores minus officia accusantium mollitia ut ad ea alias.</p>
+            </div>
+            <div class='slider-bot'>
+                <ul class='flex-center'>
+                    <li class='flex-center' v-for="pizza in pizzas">
+                        <img :src="'img/' + pizza.pic + '.png'" alt="pizza pictures">
+                        <p class='name'>{{ pizza.name }}</p>
+                        <p class='price'>{{ pizza.price }}</p>
+                    </li>
+                </ul>
+            </div>
         </div>
+
         <div class="deals">
-
+            <div class=details>
+                <div class="events">
+                    <p>MADE WITH LOVE</p>
+                    <h2>DELISH PIZZA DEALS</h2>
+                    <div class="place">
+                        <div class="date">
+                            <h1>02</h1><h4>NOV</h4>
+                        </div>
+                        <div class="location">
+                            <h4>TRADITIONAL NEAPOLITAN PIES IN KYOTO PIZZA MERCATO</h4>
+                            <p><i class="fas fa-map-marker-alt"></i> 204 E.Piazzetta Tommaso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="img/h3-img-5a.jpg" alt="cartoon">
         </div>
         <div class="booking">
 
