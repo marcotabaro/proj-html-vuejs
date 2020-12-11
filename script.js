@@ -4,6 +4,17 @@ const myApp = new Vue ({
         links: [
            ['HOME','PAGES', 'MENU'], ['EVENT', 'BLOG', 'LANDING']
         ],
+        slicer: [
+            {
+                bg: 'h3-rev-img-1', pic: 'h3-rev-img-2'
+            },
+            {
+                bg: 'h3-rev-img-3', pic: 'h3-rev-img-4'
+            },
+            {
+                bg: 'h3-rev-img-5', pic: 'h3-rev-img-6'
+            }
+        ],
         images: ['h3-img-1', 'h3-img-2', 'h3-img-3', 'h3-img-4'],
         dots: 3,
         team: [

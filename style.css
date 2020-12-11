@@ -39,6 +39,14 @@ header nav {
     justify-content: space-between;
 }
 
+header nav button {
+    padding: 15px 25px;
+    color: white;
+    background-color: #D2401E;
+    border: none;
+    font-size: .6rem;
+}
+
 header nav .link {
     display: flex;
     flex-flow: row nowrap;
@@ -71,13 +79,36 @@ header nav .link img {
 }
 
 .header-bot ul li {
+    position: relative;
     width: 25%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=);
 }
 
 .header-bot ul li img {
     height: 250px;
     width: 100%;
     padding: 5px 5px 5px 5px;
+}
+
+.header-bot ul li img:hover {
+    visibility: hidden;
+}
+
+.header-bot ul li img:hover .eye { /* it doesnt work!!!!*/
+    visibility: visible;
+}
+
+.eye {
+    color: white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color:#d2401e;
+    visibility: hidden;
 }
 
 
