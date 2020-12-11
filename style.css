@@ -406,6 +406,41 @@ header nav .link img {
     font-size: .6rem;
 }
 
+/* Footer */
+
+footer {
+    height: 400px;
+    display: flex;
+}
+
+footer img {
+    height: 400px;
+    width: 50%;
+}
+
+.contacts {
+    width: 50%;
+    background-color: #1b1b1b;
+}
+
+.contacts ul li,
+.working-hours li {
+    display: block;
+    margin: 20px 0;
+    color: #767676;
+    font-size: .7rem;
+}
+
+
+.contacts ul li span{
+    display: block;
+}
+
+.footer-title {
+    width: 200px;
+    justify-self: flex-start;
+}
+
 /* HELPER */
 
 .flex-center {

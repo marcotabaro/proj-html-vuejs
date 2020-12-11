@@ -40,6 +40,34 @@ const myApp = new Vue ({
             {
                 name: 'CAMPAGNOLA', pic: 'h3-product-img-6a-100x100', price: '$50.00 - $95.00'
             }
+        ],
+        restaurants: [
+            {
+                address: '1614 E. Bell Rd #104.', country:'Salerno, AZ 85022', number: '(602) 867-1010'
+            },
+            {
+                address: '204 E. Piazzetta Tommaso', country:'Sorrento, AZ 85022', number: '(358) 867-1010'
+            },
+            {
+                address: 'Viale Puglia 54', country:'Torre Del Greco AZ 85022', number: '(359) 867-1010'
+            },
+            {
+                address: 'Corso Italia AA', country:'Naples, AZ 85022', number: '(989) 867-1010'
+            }
+        ],
+        opensAt: [
+            {
+                day: 'MONDAY', hours: 'Kitchen Closed'
+            },
+            {
+                day: 'TUESDAY UNTIL FRIDAY', hours: '9:00 - 22:00'
+            },
+            {
+                day: "SATURDAY", hours: 'Saturday 11am to midnight'
+            },
+            {
+                day: 'SUNDAY', hours:'9:00 - 22:00'
+            }
         ]
     }
 })
