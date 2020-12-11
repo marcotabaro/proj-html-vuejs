@@ -311,12 +311,33 @@ header nav .link img {
 .deals {
     height: 500px;
     display: flex;
+    color: white;
+    font-size: .8rem;
+}
+
+.deals .details .events {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.deals .events .title {
+    left: -80px;
+    position: relative;
+}
+.deals .events p{
+    color: #AB4027;
+    margin-top: 30px;
+}
+.deals .events h2 {
+    margin: 15px 0 35px 0;
 }
 
 .deals .details {
     width: 50%;
     height: 500px;
-    /* background-color: #1C1C1C; */
+    background-color: #1C1C1C;
 }
 
 .deals img {
@@ -326,8 +347,39 @@ header nav .link img {
 
 .deals .details .place {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    border-bottom: #B68A2B dotted 2px;
+    width: 350px;
+}
 
+.deals .details .place:last-child {
+    border-bottom: none;
+}
+
+.location {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.location h4 {
+    margin-top: 20px;
+}
+
+.deals .details .date {
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.deals .details .date h1 {
+    color: #AB4027;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.deals .details .events .location p {
+    margin: 10px 0 50px 0;
 }
 
 /* HELPER */
